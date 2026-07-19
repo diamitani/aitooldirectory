@@ -341,6 +341,7 @@ body {
 }
 .bootcamp-banner h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
 .bootcamp-banner p { font-size: 14px; color: var(--text-dim); }
+.agent-banner { margin-top: 16px; border-color: rgba(34, 211, 238, 0.4); }
 .bootcamp-grid {
   margin-top: 16px;
   display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;
