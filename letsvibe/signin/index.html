@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in — LetsVibe AI Academy</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    .signin-wrap { min-height: calc(100vh - 65px); display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+    .signin-card {
+      width: min(440px, 100%); padding: 40px 36px; text-align: center;
+      background: var(--surface); border: 1px solid var(--border-strong); border-radius: 20px;
+    }
+    .signin-card .brand-mark { font-size: 34px; }
+    .signin-card h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin: 14px 0 6px; }
+    .signin-card > p { font-size: 14.5px; color: var(--text-dim); margin-bottom: 28px; }
+    .signin-actions { display: flex; flex-direction: column; gap: 12px; }
+    .signin-actions .btn { width: 100%; }
+    .btn-google { background: #fff; color: #1a1a2e; border: none; font-weight: 700; }
+    .btn-google:hover { transform: translateY(-1px); }
+    .signin-divider { display: flex; align-items: center; gap: 12px; color: var(--text-faint); font-size: 12px; margin: 6px 0; }
+    .signin-divider::before, .signin-divider::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+    .signin-note { margin-top: 24px; font-size: 12.5px; color: var(--text-faint); }
+    .setup-box {
+      margin-top: 20px; padding: 16px 18px; text-align: left;
+      background: rgba(129, 140, 248, 0.08); border: 1px solid rgba(129, 140, 248, 0.3);
+      border-radius: var(--radius-sm); font-size: 13px; color: var(--text-dim); line-height: 1.7;
+    }
+    .setup-box code { font-family: var(--mono); font-size: 12px; color: #a5f3fc; }
+    .auth-status { margin-top: 18px; font-size: 13.5px; color: var(--text-dim); }
+  </style>
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark">🌊</span>
+        <span class="brand-name">LetsVibe<span class="brand-accent">AI</span></span>
+      </a>
+      <a class="btn btn-sm btn-ghost nav-cta" style="margin-left:auto" href="/">← Back to Academy</a>
+    </div>
+  </header>
+
+  <div class="signin-wrap">
+    <div class="signin-card">
+      <span class="brand-mark">🌊</span>
+      <h1>Welcome back, builder</h1>
+      <p>Sign in to track your course progress across devices and unlock member features as they ship.</p>
+
+      <div class="signin-actions" id="signin-actions">
+        <button class="btn btn-google" id="btn-google">
+          <svg width="18" height="18" viewBox="0 0 48 48" style="margin-right:4px"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          Continue with Google
+        </button>
+        <div class="signin-divider">or</div>
+        <button class="btn btn-primary" id="btn-email">Sign in with email</button>
+      </div>
+
+      <div class="auth-status" id="auth-status" hidden></div>
+
+      <div class="setup-box" id="setup-box" hidden>
+        <strong>⚙️ Auth backend not connected yet.</strong><br />
+        Sign-in is wired for <strong>AWS Cognito</strong> (OAuth 2.0 + PKCE) and activates the moment
+        the backend is configured: create a Cognito User Pool in AWS, then fill in
+        <code>cognitoDomain</code> and <code>clientId</code> in <code>/auth/config.js</code>.
+        Full step-by-step instructions live in <code>AWS-SETUP.md</code>.
+      </div>
+
+      <p class="signin-note">We only request your name and email. No passwords are ever stored by this site.</p>
+    </div>
+  </div>
+
+  <script src="/auth/config.js"></script>
+  <script src="/assets/auth.js"></script>
+  <script>
+    (function () {
+      var status = document.getElementById("auth-status");
+      var setupBox = document.getElementById("setup-box");
+
+      /* Handle the OAuth redirect back from Cognito */
+      if (new URLSearchParams(location.search).get("code")) {
+        status.hidden = false;
+        status.textContent = "Completing sign-in…";
+        LVAuth.handleCallback().then(function (ok) {
+          if (!ok) { status.textContent = "Sign-in failed. Please try again."; }
+        });
+        return;
+      }
+
+      var user = LVAuth.currentUser();
+      if (user) {
+        status.hidden = false;
+        status.innerHTML = "You're signed in as <strong>" + user.email.replace(/</g, "&lt;") + "</strong>.";
+      }
+
+      if (!LVAuth.configured()) {
+        setupBox.hidden = false;
+      }
+
+      document.getElementById("btn-google").addEventListener("click", function () {
+        LVAuth.configured() ? LVAuth.signIn("Google") : (setupBox.hidden = false, setupBox.scrollIntoView({ behavior: "smooth" }));
+      });
+      document.getElementById("btn-email").addEventListener("click", function () {
+        LVAuth.configured() ? LVAuth.signIn() : (setupBox.hidden = false, setupBox.scrollIntoView({ behavior: "smooth" }));
+      });
+    })();
+  </script>
+</body>
+</html>

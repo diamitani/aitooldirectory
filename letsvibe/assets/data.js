@@ -87,7 +87,7 @@ window.ACADEMY_DATA = {
       desc: "Plan an idea, write a clear prompt, and generate a working full-stack app with React and Supabase — no code touched."
     },
     {
-      id: "1OldXkFjF0w", title: "How To Build REAL Apps with AI Using Replit", creator: "",
+      id: "1OldXkFjF0w", title: "How To Build REAL Apps with AI Using Replit", creator: "Zinho Automates",
       duration: "11:33", track: "Getting Started", level: "Beginner",
       desc: "From first prompt to a live deployed business app — project board, calendar, and database — built phase by phase in one afternoon."
     },
@@ -102,17 +102,17 @@ window.ACADEMY_DATA = {
       desc: "Context, rules, tab completion, agent vs. ask mode, and model selection — AI coding practices that transfer to any tool."
     },
     {
-      id: "iYiuzAsWnHU", title: "Claude Code Beginner Guide — Get Started in 20 Minutes", creator: "",
+      id: "iYiuzAsWnHU", title: "Claude Code Beginner Guide — Get Started in 20 Minutes", creator: "Alex Finn",
       duration: "20:00", track: "Claude Code", level: "Beginner",
       desc: "Set up Claude Code, give it commands, and let it build autonomously — including running it inside Cursor for extra power."
     },
     {
-      id: "sX-FmJL7Wd0", title: "Claude Code Tutorial for Beginners (2026) — Skills, Subagents, Hooks & MCP", creator: "",
+      id: "sX-FmJL7Wd0", title: "Claude Code Tutorial for Beginners (2026) — Skills, Subagents, Hooks & MCP", creator: "Shah Wali",
       duration: "1:10:00", track: "Claude Code", level: "Intermediate",
       desc: "Zero to pro in an hour: CLAUDE.md, plan mode, essential commands, subagents, skills, hooks, and connecting external tools via MCP."
     },
     {
-      id: "TAKDIvvUdc4", title: "Complete Claude Code Course In 2 Hours For Developers", creator: "",
+      id: "TAKDIvvUdc4", title: "Complete Claude Code Course In 2 Hours For Developers", creator: "Krish Naik",
       duration: "2:00:00", track: "Claude Code", level: "Intermediate",
       desc: "Installation, integration, building agents and agent teams, and extending Claude Code with skills and plugins."
     },
@@ -122,12 +122,12 @@ window.ACADEMY_DATA = {
       desc: "Every core Lovable feature step by step: prompting best practices, visual edits, meta prompting, GitHub integration, Supabase backend, and deployment."
     },
     {
-      id: "ZRmePOajOiI", title: "How I Built an App with Lovable in Under 1 Hour", creator: "",
+      id: "ZRmePOajOiI", title: "How I Built an App with Lovable in Under 1 Hour", creator: "Alex Leischow",
       duration: "27:00", track: "App Builders", level: "Intermediate",
       desc: "Live build of a client project-management system with logins, dashboards, and an approval pipeline — exact prompts included."
     },
     {
-      id: "7Y1O09Ssnew", title: "Build and Deploy a Full-Stack App Using Lovable", creator: "",
+      id: "7Y1O09Ssnew", title: "Build and Deploy a Full-Stack App Using Lovable", creator: "No Code MBA",
       duration: "25:00", track: "App Builders", level: "Intermediate",
       desc: "Plan mode, Lovable Cloud backend, publishing — plus an advanced technique for continuing the build in Claude Code or Codex."
     },
@@ -142,7 +142,7 @@ window.ACADEMY_DATA = {
       desc: "Simple Memory, Redis, Postgres via Supabase, and MongoDB — how to give n8n agents real memory, and which to choose."
     },
     {
-      id: "sahuZMMXNpI", title: "Model Context Protocol (MCP) — Explained", creator: "",
+      id: "sahuZMMXNpI", title: "Model Context Protocol (MCP) — Explained", creator: "Marco Codes",
       duration: "12:05", track: "Automation & Agents", level: "Intermediate",
       desc: "What MCP is, the problem it solves, hosts vs. clients vs. servers, and a full transaction walkthrough — the standard connecting AI to your tools."
     },
@@ -287,7 +287,7 @@ window.ACADEMY_DATA = {
     { name: "The AI Daily Brief", by: "Nathaniel Whittemore", url: "https://www.youtube.com/@AIDailyBrief", desc: "Daily 15-minute analysis of the most important AI news for business and strategy." },
     { name: "AI & I", by: "Dan Shipper / Every", url: "https://every.to/podcast", desc: "How smart people actually use AI in their work — screen-share-style conversations." },
     { name: "How I AI", by: "Claire Vo", url: "https://www.youtube.com/@howiaipodcast", desc: "Practical, demo-driven episodes showing exactly how operators automate real workflows." },
-    { name: "No Priors", by: "Sarah Guo & Elad Gil", url: "https://www.no-priors.com", desc: "Investor-grade conversations with AI founders and researchers shaping the industry." },
+    { name: "No Priors", by: "Sarah Guo & Elad Gil", url: "https://www.youtube.com/@NoPriorsPodcast", desc: "Investor-grade conversations with AI founders and researchers shaping the industry." },
     { name: "Lex Fridman Podcast", by: "Lex Fridman", url: "https://lexfridman.com/podcast", desc: "Long-form conversations with the biggest names in AI research and engineering." },
     { name: "Practical AI", by: "Changelog", url: "https://practicalai.fm", desc: "Grounded, implementation-focused discussions that make AI practical for working teams." },
     { name: "Machine Learning Street Talk", by: "Tim Scarfe", url: "https://www.youtube.com/@MachineLearningStreetTalk", desc: "Technical deep dives and spicy debates with leading AI researchers." }
