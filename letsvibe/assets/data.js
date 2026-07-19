@@ -147,6 +147,76 @@ window.ACADEMY_DATA = {
       desc: "What MCP is, the problem it solves, hosts vs. clients vs. servers, and a full transaction walkthrough — the standard connecting AI to your tools."
     },
     {
+      id: "6eBSHbLKuN0", title: "Mastering Claude Code in 30 Minutes", creator: "Anthropic (Official)",
+      duration: "30:00", track: "Claude Code", level: "Beginner",
+      desc: "Anthropic's own walkthrough of Claude Code: setup, core workflows, and the habits that make agentic coding actually work — straight from the source."
+    },
+    {
+      id: "K65vd9EYbDU", title: "I Built a $1M/y SaaS with Claude Code, Here's How", creator: "Nick Saraev",
+      duration: "22:22", track: "Latest from Creators", level: "Intermediate",
+      desc: "How a Claude Code-built SaaS (Clairvo) hit $1M ARR: mining Claude for ideas, finding payable problems, and keeping your stack model-agnostic."
+    },
+    {
+      id: "4pAt0DP-x50", title: "How to Stay Economically Valuable from 2026–2029", creator: "Nick Saraev",
+      duration: "16:11", track: "Latest from Creators", level: "Beginner",
+      desc: "The future of work with agents: preparing context for AI models, human-in-the-loop design, and why taste becomes the scarce skill."
+    },
+    {
+      id: "8JLyq_-3n58", title: "3 Years into the AI Agency Model. Where It's All Going…", creator: "Liam Ottley",
+      duration: "19:01", track: "Latest from Creators", level: "Intermediate",
+      desc: "The honest state of the AI agency model in 2026: from selling automations to full technology partnerships, and the two proven paths in — Builder or Consultant."
+    },
+    {
+      id: "oC1h922cDoY", title: "The Biggest Shift in Business Since the Internet Just Happened", creator: "Liam Ottley",
+      duration: "14:35", track: "Latest from Creators", level: "Intermediate",
+      desc: "The 5-layer AI Operating System (Context, Data, Intelligence, Automate, Build) that lets one founder run four companies from a phone."
+    },
+    {
+      id: "EuzYhzB0vbI", title: "Finally. Agent Loops Clearly Explained.", creator: "Nate Herk",
+      duration: "14:33", track: "Latest from Creators", level: "Intermediate",
+      desc: "Stop prompting agents — design loops: trigger, action, stop condition. The two pillars (objective goals + verification) that make agents actually finish work."
+    },
+    {
+      id: "-EInjdpjKy0", title: "Claude Code Google Ads: Automate Everything ($730K Earned)", creator: "Jono Catliff",
+      duration: "1:08:17", track: "Latest from Creators", level: "Advanced",
+      desc: "A full masterclass automating an entire Google Ads account with Claude Code — keywords, ads, landing pages, audits — built on a $730K playbook."
+    },
+    {
+      id: "4IyJm1i__ag", title: "Claude Code SEO: How I Got 50,000 Clicks Per Month", creator: "Jono Catliff",
+      duration: "1:08:15", track: "Latest from Creators", level: "Advanced",
+      desc: "Years of SEO compressed into one Claude Code pipeline: blog posts at scale, service pages, technical SEO to Lighthouse 100, bottled into a reusable skill."
+    },
+    {
+      id: "We7BZVKbCVw", title: "What Happens After Coding Is Solved — Boris Cherny", creator: "Lenny's Podcast",
+      duration: "1:27:45", track: "Interviews & Insights", level: "All levels",
+      desc: "The creator of Claude Code on its first year: 4% of GitHub commits, shipping 30 PRs a day without writing code, and what transforms next."
+    },
+    {
+      id: "PQU9o_5rHC4", title: "Inside Claude Code with Its Creator Boris Cherny", creator: "Y Combinator",
+      duration: "50:10", track: "Interviews & Insights", level: "All levels",
+      desc: "The Lightcone sits down with Boris Cherny on the accidental origin of Claude Code and Anthropic's bet that the path to safe AGI runs through coding."
+    },
+    {
+      id: "SlGRN8jh2RI", title: "Why Coding Is Solved, and What Comes Next", creator: "Sequoia Capital",
+      duration: "24:36", track: "Interviews & Insights", level: "All levels",
+      desc: "Boris Cherny at AI Ascent 2026: why loops are the future, why Claude Code may shrink to 100 lines, and the printing-press analogy for software."
+    },
+    {
+      id: "qH7thwrCluM", title: "Sam Altman Unfiltered: 40 Questions in 60 Minutes", creator: "The Indian Express",
+      duration: "59:55", track: "Interviews & Insights", level: "All levels",
+      desc: "OpenAI's CEO rapid-fires through AI risks, AGI timelines, regulation, job disruption, the competitive race, and what the next decade holds."
+    },
+    {
+      id: "BYXbuik3dgA", title: "Elon Musk: The Cheapest Place to Put AI Will Be Space", creator: "Dwarkesh Patel",
+      duration: "2:49:45", track: "Interviews & Insights", level: "All levels",
+      desc: "A nearly 3-hour deep dive with Musk on orbital data centers, Grok and alignment, xAI's business plan, Optimus manufacturing, and the China question."
+    },
+    {
+      id: "deMrq2uzRKA", title: "Michael Truell: How Cursor Builds at the Speed of AI", creator: "a16z",
+      duration: "27:39", track: "Interviews & Insights", level: "All levels",
+      desc: "Cursor's co-founder & CEO on the deliberate constraints behind the fastest-growing dev tool ever — betting on power users and owning the editor."
+    },
+    {
       id: "zjkBMFhNj_g", title: "Intro to Large Language Models", creator: "Andrej Karpathy",
       duration: "59:48", track: "Fundamentals", level: "Beginner",
       desc: "The famous one-hour talk: what an LLM actually is, how it's trained, and where the field is going. The single best foundation video."

@@ -72,7 +72,7 @@
   }).join("");
 
   /* ---------- guided tutorials ---------- */
-  var TRACK_ORDER = ["All", "Getting Started", "Cursor", "Claude Code", "App Builders", "Automation & Agents", "Fundamentals"];
+  var TRACK_ORDER = ["All", "Getting Started", "Cursor", "Claude Code", "App Builders", "Automation & Agents", "Latest from Creators", "Interviews & Insights", "Fundamentals"];
   var activeTrack = "All";
 
   function renderTrackChips() {
