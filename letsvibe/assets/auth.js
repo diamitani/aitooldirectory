@@ -1,4 +1,4 @@
-/* LetsVibeAI auth — OAuth 2.0 Authorization Code + PKCE against AWS Cognito.
+/* LetsVibeAI auth - OAuth 2.0 Authorization Code + PKCE against AWS Cognito.
    Static-site friendly: no client secret, tokens kept in sessionStorage. */
 (function () {
   "use strict";
@@ -61,7 +61,7 @@
   }
 
   /* ---------- flows ---------- */
-  function signIn(identityProvider) {
+  function authorize(endpoint, identityProvider) {
     if (!configured()) {
       window.location.href = "/signin";
       return;
@@ -72,7 +72,7 @@
       sessionStorage.setItem(RETURN_KEY, window.location.pathname + window.location.search);
     } catch (e) {}
     sha256base64url(verifier).then(function (challenge) {
-      var url = CFG.cognitoDomain.replace(/\/$/, "") + "/oauth2/authorize" +
+      var url = CFG.cognitoDomain.replace(/\/$/, "") + endpoint +
         "?response_type=code" +
         "&client_id=" + encodeURIComponent(CFG.clientId) +
         "&redirect_uri=" + encodeURIComponent(CFG.redirectUri) +
@@ -83,6 +83,9 @@
       window.location.href = url;
     });
   }
+  function signIn(identityProvider) { authorize("/oauth2/authorize", identityProvider); }
+  /* Cognito hosted UI: /signup renders the account-creation form directly. */
+  function signUp(identityProvider) { authorize("/signup", identityProvider); }
 
   function handleCallback() {
     var params = new URLSearchParams(window.location.search);
@@ -138,13 +141,16 @@
         '<button class="btn btn-sm btn-ghost" id="auth-signout">Sign out</button>';
       document.getElementById("auth-signout").addEventListener("click", signOut);
     } else {
-      mount.innerHTML = '<a class="btn btn-sm btn-ghost" href="/signin">Sign in</a>';
+      mount.innerHTML =
+        '<a class="btn btn-sm btn-ghost auth-signin-link" href="/signin">Sign in</a>' +
+        '<a class="btn btn-sm btn-primary" href="/signin?mode=signup">Start free</a>';
     }
   }
 
   window.LVAuth = {
     configured: configured,
     signIn: signIn,
+    signUp: signUp,
     signOut: signOut,
     currentUser: currentUser,
     handleCallback: handleCallback,

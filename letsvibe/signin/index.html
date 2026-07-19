@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign in — LetsVibe AI Academy</title>
+  <title>Sign in - LetsVibe AI Academy</title>
   <meta name="robots" content="noindex" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <style>
@@ -26,6 +26,9 @@
     .signin-divider { display: flex; align-items: center; gap: 12px; color: var(--text-faint); font-size: 12px; margin: 6px 0; }
     .signin-divider::before, .signin-divider::after { content: ""; flex: 1; height: 1px; background: var(--border); }
     .signin-note { margin-top: 24px; font-size: 12.5px; color: var(--text-faint); }
+    .signin-switch { font-size: 13px; color: var(--text-dim); margin-top: 6px; }
+    .signin-switch a { color: var(--accent-1); font-weight: 600; text-decoration: none; }
+    .signin-switch a:hover { text-decoration: underline; }
     .setup-box {
       margin-top: 20px; padding: 16px 18px; text-align: left;
       background: rgba(129, 140, 248, 0.08); border: 1px solid rgba(129, 140, 248, 0.3);
@@ -51,8 +54,8 @@
   <div class="signin-wrap">
     <div class="signin-card">
       <span class="brand-mark">🌊</span>
-      <h1>Welcome back, builder</h1>
-      <p>Sign in to track your course progress across devices and unlock member features as they ship.</p>
+      <h1 id="signin-title">Welcome back, builder</h1>
+      <p id="signin-sub">Sign in to track your course progress across devices and unlock member features as they ship.</p>
 
       <div class="signin-actions" id="signin-actions">
         <button class="btn btn-google" id="btn-google">
@@ -61,6 +64,7 @@
         </button>
         <div class="signin-divider">or</div>
         <button class="btn btn-primary" id="btn-email">Sign in with email</button>
+        <p class="signin-switch" id="signin-switch"></p>
       </div>
 
       <div class="auth-status" id="auth-status" hidden></div>
@@ -83,9 +87,11 @@
     (function () {
       var status = document.getElementById("auth-status");
       var setupBox = document.getElementById("setup-box");
+      var params = new URLSearchParams(location.search);
+      var mode = params.get("mode") === "signup" ? "signup" : "signin";
 
       /* Handle the OAuth redirect back from Cognito */
-      if (new URLSearchParams(location.search).get("code")) {
+      if (params.get("code")) {
         status.hidden = false;
         status.textContent = "Completing sign-in…";
         LVAuth.handleCallback().then(function (ok) {
@@ -93,6 +99,22 @@
         });
         return;
       }
+
+      function renderMode() {
+        var isUp = mode === "signup";
+        document.getElementById("signin-title").textContent =
+          isUp ? "Join 1 million builders" : "Welcome back, builder";
+        document.getElementById("signin-sub").textContent = isUp
+          ? "Create a free account to save your course progress across devices, keep your curriculum plans, and get member features as they ship."
+          : "Sign in to pick up your progress right where you left off.";
+        document.getElementById("btn-email").textContent =
+          isUp ? "Create account with email" : "Sign in with email";
+        document.getElementById("signin-switch").innerHTML = isUp
+          ? 'Already have an account? <a href="/signin">Sign in</a>'
+          : 'New here? <a href="/signin?mode=signup">Create a free account</a>';
+        document.title = (isUp ? "Create account" : "Sign in") + " - LetsVibe AI Academy";
+      }
+      renderMode();
 
       var user = LVAuth.currentUser();
       if (user) {
@@ -104,12 +126,16 @@
         setupBox.hidden = false;
       }
 
-      document.getElementById("btn-google").addEventListener("click", function () {
-        LVAuth.configured() ? LVAuth.signIn("Google") : (setupBox.hidden = false, setupBox.scrollIntoView({ behavior: "smooth" }));
-      });
-      document.getElementById("btn-email").addEventListener("click", function () {
-        LVAuth.configured() ? LVAuth.signIn() : (setupBox.hidden = false, setupBox.scrollIntoView({ behavior: "smooth" }));
-      });
+      function go(provider) {
+        if (!LVAuth.configured()) {
+          setupBox.hidden = false;
+          setupBox.scrollIntoView({ behavior: "smooth" });
+          return;
+        }
+        mode === "signup" ? LVAuth.signUp(provider) : LVAuth.signIn(provider);
+      }
+      document.getElementById("btn-google").addEventListener("click", function () { go("Google"); });
+      document.getElementById("btn-email").addEventListener("click", function () { go(); });
     })();
   </script>
 </body>

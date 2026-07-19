@@ -1,10 +1,10 @@
-/* TenDayAI — Interactive AI Course content
+/* TenDayAI - Interactive AI Course content
    First-party course by Patrick Diamitani / LetsVibeAI.
    Content modules: heading | subheading | paragraph | list | numbered-list | prompt | tip | congrats
-   Text fields may contain limited inline HTML (strong/em) — content is first-party and trusted. */
+   Text fields may contain limited inline HTML (strong/em) - content is first-party and trusted. */
 window.TENDAY_COURSE = {
   title: "TenDayAI: Interactive AI Course",
-  tagline: "Build Custom GPTs, automations, and AI apps in 10 days — learn by doing.",
+  tagline: "Build Custom GPTs, automations, and AI apps in 10 days - learn by doing.",
   updated: "2026-07",
   days: [
     {
@@ -173,7 +173,7 @@ window.TENDAY_COURSE = {
         { type: "heading", text: "Phase 3: Bundle Assets for Development" },
         { type: "paragraph", text: "Before building the app, we prepare our materials. The most important document is a Product Requirements Document (PRD). We also create Developer Prompts for an AI-powered coding tool to help write the code." },
         { type: "subheading", text: "Phase 4: Build and Deploy Your Application" },
-        { type: "paragraph", text: "This is where the assistant gets a 'body'—a user interface. The following prompt is an example of what we'd give to an AI coding assistant to generate the UI." },
+        { type: "paragraph", text: "This is where the assistant gets a 'body'-a user interface. The following prompt is an example of what we'd give to an AI coding assistant to generate the UI." },
         { type: "prompt",
           id: "developer_prompt",
           title: "Example Developer Prompt",

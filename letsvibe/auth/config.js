@@ -1,4 +1,4 @@
-/* LetsVibeAI auth configuration — AWS Cognito
+/* LetsVibeAI auth configuration - AWS Cognito
    ────────────────────────────────────────────
    Fill these three values in after creating your Cognito User Pool
    (see AWS-SETUP.md in the repo root for the exact steps).

@@ -1,5 +1,5 @@
 /* ============================================================
-   LetsVibeAI Agent Portal — light, clean, SaaS aesthetic
+   LetsVibeAI Agent Portal - light, clean, SaaS aesthetic
    ============================================================ */
 
 :root {
@@ -19,6 +19,7 @@
   --p-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06);
   --p-shadow-lg: 0 4px 12px rgba(15, 23, 42, 0.08), 0 20px 48px rgba(15, 23, 42, 0.10);
   --p-font: "Inter", system-ui, -apple-system, sans-serif;
+  --p-display: "Outfit", "Inter", system-ui, sans-serif;
   --p-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
@@ -56,6 +57,10 @@ body { font-family: var(--p-font); background: var(--p-bg); color: var(--p-text)
 .pbtn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(8, 145, 178, 0.38); }
 .pbtn-ghost { background: var(--p-surface); color: var(--p-text); border-color: var(--p-border-strong); }
 .pbtn-ghost:hover { border-color: var(--p-accent-1); color: var(--p-accent-1); }
+.pbtn:active { transform: translateY(1px) scale(0.98); }
+.pbtn:focus-visible, .ptopic:focus-visible, .pseg-btn:focus-visible {
+  outline: 2px solid var(--p-accent-1); outline-offset: 2px;
+}
 
 /* ---------- hero ---------- */
 .phero { padding: 84px 0 40px; text-align: center; background:
@@ -67,7 +72,7 @@ body { font-family: var(--p-font); background: var(--p-bg); color: var(--p-text)
   background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25);
   padding: 7px 16px; border-radius: 999px; margin-bottom: 24px;
 }
-.phero h1 { font-size: clamp(34px, 5.5vw, 56px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.08; margin-bottom: 18px; }
+.phero h1 { font-family: var(--p-display); font-size: clamp(34px, 5.5vw, 56px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.08; margin-bottom: 18px; }
 .phero-sub { max-width: 580px; margin: 0 auto; font-size: 17px; color: var(--p-text-dim); }
 .phero-sub a { color: var(--p-accent-1); font-weight: 600; text-decoration: none; }
 .phero-sub a:hover { text-decoration: underline; }
@@ -98,7 +103,7 @@ body { font-family: var(--p-font); background: var(--p-bg); color: var(--p-text)
 .parchitect { padding: 72px 0; }
 .parch-head { text-align: center; max-width: 620px; margin: 0 auto 40px; }
 .peyebrow { font-family: var(--p-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: var(--p-accent-1); margin-bottom: 12px; }
-.parch-head h2 { font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 12px; }
+.parch-head h2 { font-family: var(--p-display); font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 12px; }
 .parch-head p { color: var(--p-text-dim); font-size: 15.5px; }
 
 .parch-shell {
@@ -198,6 +203,35 @@ body { font-family: var(--p-font); background: var(--p-bg); color: var(--p-text)
 .ppower-body p { font-size: 13.5px; color: var(--p-text-dim); }
 .ppower-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
+/* ---------- plan capture + newsletter (light theme) ---------- */
+.pcapture {
+  margin-top: 26px; padding: 22px 24px; border-radius: var(--p-radius);
+  border: 1px solid rgba(8, 145, 178, 0.3);
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.05), rgba(99, 102, 241, 0.05));
+}
+.pcapture h4 { font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
+.pcapture p { font-size: 13px; color: var(--p-text-dim); margin-bottom: 14px; }
+
+.nl-form .nl-row { display: flex; gap: 10px; }
+.nl-form input {
+  flex: 1; min-width: 0; padding: 12px 16px;
+  background: var(--p-surface); border: 1px solid var(--p-border-strong);
+  border-radius: 999px; color: var(--p-text); font-family: var(--p-font); font-size: 14px; outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.nl-form input:focus { border-color: var(--p-accent-1); box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.12); }
+.nl-form .btn, .nl-form button {
+  padding: 11px 22px; border-radius: 999px; border: none; cursor: pointer;
+  background: var(--p-grad); color: #fff; font-family: var(--p-font); font-size: 13.5px; font-weight: 600;
+  white-space: nowrap; transition: all 0.16s;
+}
+.nl-form button:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(8, 145, 178, 0.3); }
+.nl-form button[disabled] { opacity: 0.6; }
+.nl-status { font-size: 12px; margin-top: 8px; min-height: 15px; color: var(--p-text-faint); }
+.nl-status.err { color: #dc2626; }
+.nl-done { font-size: 14px; color: #059669; padding: 6px 0; }
+.nl-done a { color: var(--p-accent-1); }
+
 /* ---------- footer ---------- */
 .pfooter { border-top: 1px solid var(--p-border); padding: 28px 0 36px; text-align: center; }
 .pfooter p { font-size: 13px; color: var(--p-text-faint); }
@@ -209,4 +243,10 @@ body { font-family: var(--p-font); background: var(--p-bg); color: var(--p-text)
   .parch-shell { grid-template-columns: 1fr; }
   .parch-intake { position: static; }
   .pnav-links, .pnav-crumb { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .pthinking-line { opacity: 1; transform: none; }
 }

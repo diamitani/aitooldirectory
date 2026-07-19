@@ -100,7 +100,7 @@
     var sel = $("#day-select");
     sel.innerHTML = C.days.map(function (d) {
       return '<option value="' + d.day + '"' + (d.day === currentDay ? " selected" : "") + ">" +
-        (done[d.day] ? "✓ " : "") + "Day " + d.day + " — " + esc(d.title) + "</option>";
+        (done[d.day] ? "✓ " : "") + "Day " + d.day + " - " + esc(d.title) + "</option>";
     }).join("");
   }
 
@@ -149,11 +149,36 @@
     updateCompleteBtn();
     renderSidebar();
     renderProgress();
+    maybeFunnelMoment();
     if (done[currentDay] && currentDay < C.days.length) {
       currentDay++;
       renderDay();
     }
   });
+
+  /* Funnel: one value-framed moment after real progress (Day 2 complete).
+     Soft gate only; auth CTAs appear once Cognito is configured. */
+  var FUNNEL_KEY = "tendayai-funnel-shown";
+  function maybeFunnelMoment() {
+    if (!window.LVGrowth || !done[currentDay]) return;
+    var completed = C.days.filter(function (d) { return done[d.day]; }).length;
+    if (completed < 2) return;
+    if (LVGrowth.isSubscribed() && !window.LVAuth.configured()) return;
+    if (LVGrowth.isAuthed()) return;
+    try {
+      if (localStorage.getItem(FUNNEL_KEY)) return;
+      localStorage.setItem(FUNNEL_KEY, "1");
+    } catch (e) {}
+    LVGrowth.showGate({
+      icon: "🔥",
+      title: "You're on a roll. Don't lose your streak.",
+      body: window.LVAuth.configured()
+        ? "Create a free account to save your progress across devices and get new lessons as they ship."
+        : "Get the weekly briefing with new lessons, tools, and builds. Your progress stays saved in this browser either way.",
+      source: "tendayai-day" + currentDay,
+      skipLabel: "Keep learning"
+    });
+  }
 
   $("#reset-progress").addEventListener("click", function () {
     if (!confirm("Reset all course progress?")) return;

@@ -1,4 +1,4 @@
-/* LetsVibe AI Academy — content library
+/* LetsVibe AI Academy - content library
    Curriculum + articles are first-party (Patrick Diamitani / LetsVibeAI).
    Videos, courses, podcasts, and blogs are curated external resources. */
 window.ACADEMY_DATA = {
@@ -7,7 +7,7 @@ window.ACADEMY_DATA = {
   /* ---------- First-party: Vibe Coding Masterclass ---------- */
   modules: [
     {
-      num: 1, title: "What Is AI?", duration: "2–3h", level: "Beginner",
+      num: 1, title: "What Is AI?", duration: "2-3h", level: "Beginner",
       desc: "Machine learning vs. rule-based systems, how LLMs process and generate text, tokens and context windows, and the map of today's model landscape.",
       outcomes: ["Explain how LLMs actually work", "Understand tokens & context windows", "Know each major model's strengths"]
     },
@@ -18,11 +18,11 @@ window.ACADEMY_DATA = {
     },
     {
       num: 3, title: "The Toolkit", duration: "3h", level: "All levels",
-      desc: "Hands-on tour of the builder stack: Cursor, Claude Code, Lovable, v0, Bolt, Replit Agent, and Windsurf — what each is for and how to combine them.",
+      desc: "Hands-on tour of the builder stack: Cursor, Claude Code, Lovable, v0, Bolt, Replit Agent, and Windsurf - what each is for and how to combine them.",
       outcomes: ["Choose the right tool per project", "Combine tools into one workflow", "Ship something in every tool once"]
     },
     {
-      num: 4, title: "Prompt Chaining", duration: "2–3h", level: "Intermediate",
+      num: 4, title: "Prompt Chaining", duration: "2-3h", level: "Intermediate",
       desc: "Break complex builds into sequenced prompts. Planning prompts, scaffold prompts, refinement prompts, and recovery prompts when the AI goes sideways.",
       outcomes: ["Design multi-step prompt sequences", "Write prompts that constrain scope", "Recover from bad generations fast"]
     },
@@ -32,7 +32,7 @@ window.ACADEMY_DATA = {
       outcomes: ["Write effective rules files", "Manage context windows deliberately", "Ground the AI in your project's truth"]
     },
     {
-      num: 6, title: "Process Engineering", duration: "2–3h", level: "Advanced",
+      num: 6, title: "Process Engineering", duration: "2-3h", level: "Advanced",
       desc: "Turn one-off wins into repeatable systems: standardized build processes, checklists, version control habits, and team-ready AI workflows.",
       outcomes: ["Design reproducible build processes", "Use git as your safety net", "Scale vibe coding to a team"]
     }
@@ -41,18 +41,18 @@ window.ACADEMY_DATA = {
   labs: [
     {
       num: 1, title: "Build a Marketing Website", duration: "~4h", level: "Beginner",
-      desc: "Plan, generate, and deploy a complete marketing site with a hero, features, and contact form — live on a public URL by the end.",
-      skills: ["Modules 1–3", "Deployment"]
+      desc: "Plan, generate, and deploy a complete marketing site with a hero, features, and contact form - live on a public URL by the end.",
+      skills: ["Modules 1-3", "Deployment"]
     },
     {
       num: 2, title: "Build an E-Commerce Store", duration: "~6h", level: "Intermediate",
-      desc: "A working storefront with product catalog, cart, authentication, and payments — your first real full-stack build.",
-      skills: ["Modules 1–5", "Auth", "Payments"]
+      desc: "A working storefront with product catalog, cart, authentication, and payments - your first real full-stack build.",
+      skills: ["Modules 1-5", "Auth", "Payments"]
     },
     {
       num: 3, title: "Build a Directory / Marketplace", duration: "~8h", level: "Advanced",
       desc: "The capstone: a searchable, filterable directory with user accounts and listings. The same pattern behind this very platform.",
-      skills: ["Modules 1–6", "Full-stack", "Database"]
+      skills: ["Modules 1-6", "Full-stack", "Database"]
     }
   ],
 
@@ -74,22 +74,22 @@ window.ACADEMY_DATA = {
     {
       id: "EWvNQjAaOHw", title: "How I Use LLMs", creator: "Andrej Karpathy",
       duration: "2:11:00", track: "Getting Started", level: "Beginner",
-      desc: "A practical, example-driven tour of the entire LLM ecosystem — tools, settings, and workflows — from OpenAI's founding team member."
+      desc: "A practical, example-driven tour of the entire LLM ecosystem - tools, settings, and workflows - from OpenAI's founding team member."
     },
     {
       id: "uogxJPnYyPQ", title: "How to Use Replit to Build an App (Vibe Coding Tutorial)", creator: "Simpletivity",
       duration: "11:39", track: "Getting Started", level: "Beginner",
-      desc: "Build and publish a custom productivity app with zero code — the friendliest possible on-ramp to vibe coding."
+      desc: "Build and publish a custom productivity app with zero code - the friendliest possible on-ramp to vibe coding."
     },
     {
       id: "tR-N1InkwLc", title: "Lovable Tutorial: Build a Web App from Text Prompts", creator: "AI Academy",
       duration: "12:00", track: "Getting Started", level: "Beginner",
-      desc: "Plan an idea, write a clear prompt, and generate a working full-stack app with React and Supabase — no code touched."
+      desc: "Plan an idea, write a clear prompt, and generate a working full-stack app with React and Supabase - no code touched."
     },
     {
       id: "1OldXkFjF0w", title: "How To Build REAL Apps with AI Using Replit", creator: "Zinho Automates",
       duration: "11:33", track: "Getting Started", level: "Beginner",
-      desc: "From first prompt to a live deployed business app — project board, calendar, and database — built phase by phase in one afternoon."
+      desc: "From first prompt to a live deployed business app - project board, calendar, and database - built phase by phase in one afternoon."
     },
     {
       id: "2aldTxnbNt0", title: "Cursor 2.0 Tutorial for Beginners (Full Course)", creator: "Riley Brown",
@@ -99,15 +99,15 @@ window.ACADEMY_DATA = {
     {
       id: "5zR1ZE5aqho", title: "Cursor Crash Course & AI Coding For Beginners", creator: "Traversy Media",
       duration: "52:41", track: "Cursor", level: "Beginner",
-      desc: "Context, rules, tab completion, agent vs. ask mode, and model selection — AI coding practices that transfer to any tool."
+      desc: "Context, rules, tab completion, agent vs. ask mode, and model selection - AI coding practices that transfer to any tool."
     },
     {
-      id: "iYiuzAsWnHU", title: "Claude Code Beginner Guide — Get Started in 20 Minutes", creator: "Alex Finn",
+      id: "iYiuzAsWnHU", title: "Claude Code Beginner Guide - Get Started in 20 Minutes", creator: "Alex Finn",
       duration: "20:00", track: "Claude Code", level: "Beginner",
-      desc: "Set up Claude Code, give it commands, and let it build autonomously — including running it inside Cursor for extra power."
+      desc: "Set up Claude Code, give it commands, and let it build autonomously - including running it inside Cursor for extra power."
     },
     {
-      id: "sX-FmJL7Wd0", title: "Claude Code Tutorial for Beginners (2026) — Skills, Subagents, Hooks & MCP", creator: "Shah Wali",
+      id: "sX-FmJL7Wd0", title: "Claude Code Tutorial for Beginners (2026) - Skills, Subagents, Hooks & MCP", creator: "Shah Wali",
       duration: "1:10:00", track: "Claude Code", level: "Intermediate",
       desc: "Zero to pro in an hour: CLAUDE.md, plan mode, essential commands, subagents, skills, hooks, and connecting external tools via MCP."
     },
@@ -117,19 +117,19 @@ window.ACADEMY_DATA = {
       desc: "Installation, integration, building agents and agent teams, and extending Claude Code with skills and plugins."
     },
     {
-      id: "YLjopoEnPi8", title: "Lovable FULL Tutorial — For COMPLETE Beginners", creator: "Tech With Tim",
+      id: "YLjopoEnPi8", title: "Lovable FULL Tutorial - For COMPLETE Beginners", creator: "Tech With Tim",
       duration: "36:13", track: "App Builders", level: "Beginner",
       desc: "Every core Lovable feature step by step: prompting best practices, visual edits, meta prompting, GitHub integration, Supabase backend, and deployment."
     },
     {
       id: "ZRmePOajOiI", title: "How I Built an App with Lovable in Under 1 Hour", creator: "Alex Leischow",
       duration: "27:00", track: "App Builders", level: "Intermediate",
-      desc: "Live build of a client project-management system with logins, dashboards, and an approval pipeline — exact prompts included."
+      desc: "Live build of a client project-management system with logins, dashboards, and an approval pipeline - exact prompts included."
     },
     {
       id: "7Y1O09Ssnew", title: "Build and Deploy a Full-Stack App Using Lovable", creator: "No Code MBA",
       duration: "25:00", track: "App Builders", level: "Intermediate",
-      desc: "Plan mode, Lovable Cloud backend, publishing — plus an advanced technique for continuing the build in Claude Code or Codex."
+      desc: "Plan mode, Lovable Cloud backend, publishing - plus an advanced technique for continuing the build in Claude Code or Codex."
     },
     {
       id: "jOGtu3Y2yBQ", title: "Replit AI Agent: Build a Micro SaaS (Vibe Coding Tutorial)", creator: "Moe Lueker",
@@ -139,17 +139,17 @@ window.ACADEMY_DATA = {
     {
       id: "mtubt_wqxqE", title: "4 Ways To Store Memory In Your AI Agents (n8n Tutorial)", creator: "Michele Torti",
       duration: "17:12", track: "Automation & Agents", level: "Intermediate",
-      desc: "Simple Memory, Redis, Postgres via Supabase, and MongoDB — how to give n8n agents real memory, and which to choose."
+      desc: "Simple Memory, Redis, Postgres via Supabase, and MongoDB - how to give n8n agents real memory, and which to choose."
     },
     {
-      id: "sahuZMMXNpI", title: "Model Context Protocol (MCP) — Explained", creator: "Marco Codes",
+      id: "sahuZMMXNpI", title: "Model Context Protocol (MCP) - Explained", creator: "Marco Codes",
       duration: "12:05", track: "Automation & Agents", level: "Intermediate",
-      desc: "What MCP is, the problem it solves, hosts vs. clients vs. servers, and a full transaction walkthrough — the standard connecting AI to your tools."
+      desc: "What MCP is, the problem it solves, hosts vs. clients vs. servers, and a full transaction walkthrough - the standard connecting AI to your tools."
     },
     {
       id: "6eBSHbLKuN0", title: "Mastering Claude Code in 30 Minutes", creator: "Anthropic (Official)",
       duration: "30:00", track: "Claude Code", level: "Beginner",
-      desc: "Anthropic's own walkthrough of Claude Code: setup, core workflows, and the habits that make agentic coding actually work — straight from the source."
+      desc: "Anthropic's own walkthrough of Claude Code: setup, core workflows, and the habits that make agentic coding actually work - straight from the source."
     },
     {
       id: "K65vd9EYbDU", title: "I Built a $1M/y SaaS with Claude Code, Here's How", creator: "Nick Saraev",
@@ -157,14 +157,14 @@ window.ACADEMY_DATA = {
       desc: "How a Claude Code-built SaaS (Clairvo) hit $1M ARR: mining Claude for ideas, finding payable problems, and keeping your stack model-agnostic."
     },
     {
-      id: "4pAt0DP-x50", title: "How to Stay Economically Valuable from 2026–2029", creator: "Nick Saraev",
+      id: "4pAt0DP-x50", title: "How to Stay Economically Valuable from 2026-2029", creator: "Nick Saraev",
       duration: "16:11", track: "Latest from Creators", level: "Beginner",
       desc: "The future of work with agents: preparing context for AI models, human-in-the-loop design, and why taste becomes the scarce skill."
     },
     {
       id: "8JLyq_-3n58", title: "3 Years into the AI Agency Model. Where It's All Going…", creator: "Liam Ottley",
       duration: "19:01", track: "Latest from Creators", level: "Intermediate",
-      desc: "The honest state of the AI agency model in 2026: from selling automations to full technology partnerships, and the two proven paths in — Builder or Consultant."
+      desc: "The honest state of the AI agency model in 2026: from selling automations to full technology partnerships, and the two proven paths in - Builder or Consultant."
     },
     {
       id: "oC1h922cDoY", title: "The Biggest Shift in Business Since the Internet Just Happened", creator: "Liam Ottley",
@@ -174,12 +174,12 @@ window.ACADEMY_DATA = {
     {
       id: "EuzYhzB0vbI", title: "Finally. Agent Loops Clearly Explained.", creator: "Nate Herk",
       duration: "14:33", track: "Latest from Creators", level: "Intermediate",
-      desc: "Stop prompting agents — design loops: trigger, action, stop condition. The two pillars (objective goals + verification) that make agents actually finish work."
+      desc: "Stop prompting agents - design loops: trigger, action, stop condition. The two pillars (objective goals + verification) that make agents actually finish work."
     },
     {
       id: "-EInjdpjKy0", title: "Claude Code Google Ads: Automate Everything ($730K Earned)", creator: "Jono Catliff",
       duration: "1:08:17", track: "Latest from Creators", level: "Advanced",
-      desc: "A full masterclass automating an entire Google Ads account with Claude Code — keywords, ads, landing pages, audits — built on a $730K playbook."
+      desc: "A full masterclass automating an entire Google Ads account with Claude Code - keywords, ads, landing pages, audits - built on a $730K playbook."
     },
     {
       id: "4IyJm1i__ag", title: "Claude Code SEO: How I Got 50,000 Clicks Per Month", creator: "Jono Catliff",
@@ -187,7 +187,7 @@ window.ACADEMY_DATA = {
       desc: "Years of SEO compressed into one Claude Code pipeline: blog posts at scale, service pages, technical SEO to Lighthouse 100, bottled into a reusable skill."
     },
     {
-      id: "We7BZVKbCVw", title: "What Happens After Coding Is Solved — Boris Cherny", creator: "Lenny's Podcast",
+      id: "We7BZVKbCVw", title: "What Happens After Coding Is Solved - Boris Cherny", creator: "Lenny's Podcast",
       duration: "1:27:45", track: "Interviews & Insights", level: "All levels",
       desc: "The creator of Claude Code on its first year: 4% of GitHub commits, shipping 30 PRs a day without writing code, and what transforms next."
     },
@@ -214,7 +214,7 @@ window.ACADEMY_DATA = {
     {
       id: "deMrq2uzRKA", title: "Michael Truell: How Cursor Builds at the Speed of AI", creator: "a16z",
       duration: "27:39", track: "Interviews & Insights", level: "All levels",
-      desc: "Cursor's co-founder & CEO on the deliberate constraints behind the fastest-growing dev tool ever — betting on power users and owning the editor."
+      desc: "Cursor's co-founder & CEO on the deliberate constraints behind the fastest-growing dev tool ever - betting on power users and owning the editor."
     },
     {
       id: "zjkBMFhNj_g", title: "Intro to Large Language Models", creator: "Andrej Karpathy",
@@ -224,17 +224,17 @@ window.ACADEMY_DATA = {
     {
       id: "wjZofJX0v4M", title: "But What Is a GPT? Visual Intro to Transformers", creator: "3Blue1Brown",
       duration: "27:14", track: "Fundamentals", level: "Beginner",
-      desc: "The most beautiful visual explanation of how transformers work — no math background required."
+      desc: "The most beautiful visual explanation of how transformers work - no math background required."
     },
     {
       id: "eMlx5fFNoYc", title: "Attention in Transformers, Visually Explained", creator: "3Blue1Brown",
       duration: "26:10", track: "Fundamentals", level: "Intermediate",
-      desc: "The attention mechanism — the heart of every modern AI model — made visually intuitive."
+      desc: "The attention mechanism - the heart of every modern AI model - made visually intuitive."
     },
     {
       id: "7xTGNNLPyMI", title: "Deep Dive into LLMs like ChatGPT", creator: "Andrej Karpathy",
       duration: "3:31:00", track: "Fundamentals", level: "Advanced",
-      desc: "Everything under the hood: pretraining, fine-tuning, RLHF, hallucinations, and capabilities — a full general-audience course in one video."
+      desc: "Everything under the hood: pretraining, fine-tuning, RLHF, hallucinations, and capabilities - a full general-audience course in one video."
     },
     {
       id: "kCc8FmEb1nY", title: "Let's Build GPT: From Scratch, in Code", creator: "Andrej Karpathy",
@@ -248,7 +248,7 @@ window.ACADEMY_DATA = {
     {
       title: "Vibe Coding 101 with Replit", provider: "DeepLearning.AI", price: "Free", level: "Beginner",
       url: "https://www.deeplearning.ai/short-courses/vibe-coding-101-with-replit/",
-      desc: "Build and share two apps with an AI coding agent — the official beginner's vibe coding course, taught with Replit."
+      desc: "Build and share two apps with an AI coding agent - the official beginner's vibe coding course, taught with Replit."
     },
     {
       title: "ChatGPT Prompt Engineering for Developers", provider: "DeepLearning.AI", price: "Free", level: "Beginner",
@@ -263,7 +263,7 @@ window.ACADEMY_DATA = {
     {
       title: "Anthropic Academy", provider: "Anthropic", price: "Free", level: "All levels",
       url: "https://www.anthropic.com/learn",
-      desc: "Official structured courses on prompting, tool use, MCP, and agent design — straight from Claude's maker."
+      desc: "Official structured courses on prompting, tool use, MCP, and agent design - straight from Claude's maker."
     },
     {
       title: "OpenAI Academy", provider: "OpenAI", price: "Free", level: "All levels",
@@ -298,7 +298,7 @@ window.ACADEMY_DATA = {
     {
       title: "Prompt Engineering Guide", provider: "DAIR.AI", price: "Free", level: "All levels",
       url: "https://www.promptingguide.ai",
-      desc: "The open reference for prompting techniques — zero-shot to chain-of-thought, RAG, and agent patterns."
+      desc: "The open reference for prompting techniques - zero-shot to chain-of-thought, RAG, and agent patterns."
     },
     {
       title: "Rundown University", provider: "The Rundown AI", price: "Paid", level: "All levels",
@@ -310,9 +310,9 @@ window.ACADEMY_DATA = {
   /* ---------- First-party articles: LiveBuildAI series ---------- */
   articles: [
     {
-      title: "LiveBuildAI — Sales Automation Guide", type: "How-To Lab",
+      title: "LiveBuildAI - Sales Automation Guide", type: "How-To Lab",
       url: "https://www.linkedin.com/pulse/livebuildai-sales-automation-guide-patrick-diamitani-9akdc",
-      desc: "Build a go-to-market email automation with Make.com, Google Sheets, and Resend — including deliverability setup (SPF, DKIM, DMARC)."
+      desc: "Build a go-to-market email automation with Make.com, Google Sheets, and Resend - including deliverability setup (SPF, DKIM, DMARC)."
     },
     {
       title: "Build a Personalized Email Outreach Engine", type: "How-To Lab",
@@ -332,7 +332,7 @@ window.ACADEMY_DATA = {
     {
       title: "AI Today: What's Moving", type: "News Briefing",
       url: "https://www.linkedin.com/pulse/ai-today-whats-moving-patrick-diamitani-diy2c",
-      desc: "A field report on the AI shifts that matter for builders — models, tools, and what to do about them."
+      desc: "A field report on the AI shifts that matter for builders - models, tools, and what to do about them."
     },
     {
       title: "LiveBuildAI: The Week AI Grew Up", type: "News Briefing",
@@ -353,9 +353,9 @@ window.ACADEMY_DATA = {
 
   /* ---------- Podcasts ---------- */
   podcasts: [
-    { name: "Latent Space", by: "swyx & Alessio", url: "https://latent.space", desc: "The podcast of the AI engineering discipline — deep interviews with the people building frontier products." },
+    { name: "Latent Space", by: "swyx & Alessio", url: "https://latent.space", desc: "The podcast of the AI engineering discipline - deep interviews with the people building frontier products." },
     { name: "The AI Daily Brief", by: "Nathaniel Whittemore", url: "https://www.youtube.com/@AIDailyBrief", desc: "Daily 15-minute analysis of the most important AI news for business and strategy." },
-    { name: "AI & I", by: "Dan Shipper / Every", url: "https://every.to/podcast", desc: "How smart people actually use AI in their work — screen-share-style conversations." },
+    { name: "AI & I", by: "Dan Shipper / Every", url: "https://every.to/podcast", desc: "How smart people actually use AI in their work - screen-share-style conversations." },
     { name: "How I AI", by: "Claire Vo", url: "https://www.youtube.com/@howiaipodcast", desc: "Practical, demo-driven episodes showing exactly how operators automate real workflows." },
     { name: "No Priors", by: "Sarah Guo & Elad Gil", url: "https://www.youtube.com/@NoPriorsPodcast", desc: "Investor-grade conversations with AI founders and researchers shaping the industry." },
     { name: "Lex Fridman Podcast", by: "Lex Fridman", url: "https://lexfridman.com/podcast", desc: "Long-form conversations with the biggest names in AI research and engineering." },
@@ -365,13 +365,13 @@ window.ACADEMY_DATA = {
 
   /* ---------- Blogs & newsletters ---------- */
   blogs: [
-    { name: "Simon Willison's Weblog", url: "https://simonwillison.net", desc: "The most useful builder-blog in AI — hands-on notes on every model and tool release." },
-    { name: "One Useful Thing", by: "Ethan Mollick", url: "https://www.oneusefulthing.org", desc: "Wharton professor's essays on working and learning with AI — practical and evidence-based." },
-    { name: "Every — Chain of Thought", url: "https://every.to/chain-of-thought", desc: "Sharp essays on how AI changes business, creativity, and how we work." },
+    { name: "Simon Willison's Weblog", url: "https://simonwillison.net", desc: "The most useful builder-blog in AI - hands-on notes on every model and tool release." },
+    { name: "One Useful Thing", by: "Ethan Mollick", url: "https://www.oneusefulthing.org", desc: "Wharton professor's essays on working and learning with AI - practical and evidence-based." },
+    { name: "Every - Chain of Thought", url: "https://every.to/chain-of-thought", desc: "Sharp essays on how AI changes business, creativity, and how we work." },
     { name: "Ben's Bites", url: "https://bensbites.com", desc: "Daily AI news and hands-on how-tos tuned for business builders." },
     { name: "The Rundown AI", url: "https://therundown.ai", desc: "5-minute daily briefing on everything that matters in AI, plus tutorials." },
-    { name: "TLDR AI", url: "https://tldr.tech/ai", desc: "Concise daily digest of AI research, releases, and industry moves — the engineer's read." },
-    { name: "Anthropic Engineering Blog", url: "https://www.anthropic.com/engineering", desc: "How Anthropic builds with Claude — agent design, prompting, and MCP patterns from the source." },
+    { name: "TLDR AI", url: "https://tldr.tech/ai", desc: "Concise daily digest of AI research, releases, and industry moves - the engineer's read." },
+    { name: "Anthropic Engineering Blog", url: "https://www.anthropic.com/engineering", desc: "How Anthropic builds with Claude - agent design, prompting, and MCP patterns from the source." },
     { name: "Lenny's Newsletter", url: "https://www.lennysnewsletter.com", desc: "Product and growth wisdom, increasingly focused on building in the AI era." },
     { name: "Import AI", by: "Jack Clark", url: "https://importai.substack.com", desc: "Weekly research-grade analysis of AI progress and policy from an Anthropic co-founder." },
     { name: "Latent Space Newsletter", url: "https://latent.space", desc: "Essays and paper club notes defining the AI engineer discipline." }
