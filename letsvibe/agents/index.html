@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Portal - LetsVibe AI | Curriculum Architect</title>
+  <meta name="description" content="LetsVibeAI's agent portal. The Curriculum Architect designs a personalized AI learning plan from your goals - powered by the CurriculumOS agent framework." />
+  <meta property="og:title" content="LetsVibeAI Agent Portal - Curriculum Architect" />
+  <meta property="og:description" content="Describe what you want to learn. Get a personalized, week-by-week curriculum built from a curated resource index." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+  <link rel="stylesheet" href="/agents/assets/portal.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="pnav">
+    <div class="pnav-inner">
+      <a class="pbrand" href="/">
+        <span class="pbrand-mark">🌊</span>
+        <span>LetsVibe<span class="pbrand-accent">AI</span></span>
+      </a>
+      <span class="pnav-crumb">Agent Portal</span>
+      <nav class="pnav-links">
+        <a href="/">Academy</a>
+        <a href="/tendayai/">TenDayAI</a>
+        <a href="https://aitooldirectory-two.vercel.app" target="_blank" rel="noopener">Directory</a>
+      </nav>
+      <a class="pbtn pbtn-primary pbtn-sm" href="#architect">Launch agent</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="phero">
+    <div class="pcontainer">
+      <p class="phero-badge">✦ LetsVibeAI Agents</p>
+      <h1>Meet your <span class="pgrad">AI learning team</span></h1>
+      <p class="phero-sub">Purpose-built agents that turn LetsVibeAI's curated knowledge into personal results. First up: the Curriculum Architect, powered by the open-source <a href="https://github.com/diamitani/curriculum-os" target="_blank" rel="noopener">CurriculumOS</a> framework.</p>
+    </div>
+  </section>
+
+  <!-- ============ AGENT CARDS ============ -->
+  <section class="pagents">
+    <div class="pcontainer">
+      <div class="pagent-grid">
+        <div class="pagent-card featured">
+          <div class="pagent-icon">🎓</div>
+          <div class="pagent-meta"><span class="ppill ppill-live">● Live</span><span class="ppill">Free</span></div>
+          <h3>Curriculum Architect</h3>
+          <p>Researches, sequences, and personalizes a week-by-week learning plan from the academy's verified resource index - videos, courses, labs, and articles.</p>
+          <a class="pbtn pbtn-primary" href="#architect">Build my curriculum ↓</a>
+        </div>
+        <div class="pagent-card">
+          <div class="pagent-icon">🧭</div>
+          <div class="pagent-meta"><span class="ppill ppill-soon">Coming soon</span></div>
+          <h3>Stack Advisor</h3>
+          <p>Recommends the right AI tool stack for your role and budget from the 950+ tool directory.</p>
+        </div>
+        <div class="pagent-card">
+          <div class="pagent-icon">✍️</div>
+          <div class="pagent-meta"><span class="ppill ppill-soon">Coming soon</span></div>
+          <h3>Prompt Architect</h3>
+          <p>Turns rough ideas into production-grade prompts using the Chain Prompting method from TenDayAI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CURRICULUM ARCHITECT ============ -->
+  <section class="parchitect" id="architect">
+    <div class="pcontainer">
+      <div class="parch-head">
+        <p class="peyebrow">CURRICULUM ARCHITECT</p>
+        <h2>Describe your goal. Get your plan.</h2>
+        <p>The agent compiles your intent (PAL), pulls from the indexed resource library, and generates a sequenced curriculum with time estimates and checkpoints.</p>
+      </div>
+
+      <div class="parch-shell">
+        <!-- intake -->
+        <div class="parch-intake" id="intake-panel">
+          <div class="pstep"><span class="pstep-num">1</span> What do you want to learn?</div>
+          <div class="ptopic-grid" id="topic-grid">
+            <button class="ptopic active" data-topic="vibe-coding"><span>🛠️</span> Vibe Coding<br /><small>Build apps with AI tools</small></button>
+            <button class="ptopic" data-topic="automation"><span>⚡</span> AI Automation & Agents<br /><small>Workflows, n8n, Make, loops</small></button>
+            <button class="ptopic" data-topic="fundamentals"><span>🧠</span> AI Fundamentals<br /><small>How LLMs actually work</small></button>
+            <button class="ptopic" data-topic="business"><span>📈</span> AI for Business & GTM<br /><small>Agencies, SaaS, growth</small></button>
+          </div>
+
+          <div class="pstep"><span class="pstep-num">2</span> Your current level</div>
+          <div class="pseg" id="level-seg">
+            <button class="pseg-btn active" data-level="beginner">New to this</button>
+            <button class="pseg-btn" data-level="intermediate">Some experience</button>
+            <button class="pseg-btn" data-level="advanced">Experienced</button>
+          </div>
+
+          <div class="pstep"><span class="pstep-num">3</span> Time you can commit</div>
+          <div class="pseg" id="time-seg">
+            <button class="pseg-btn" data-hours="2">2 hrs/week</button>
+            <button class="pseg-btn active" data-hours="5">5 hrs/week</button>
+            <button class="pseg-btn" data-hours="10">10+ hrs/week</button>
+          </div>
+
+          <button class="pbtn pbtn-primary pbtn-lg" id="generate-btn">✦ Generate my curriculum</button>
+          <p class="parch-note">Runs instantly in your browser against the academy's verified index. No account needed.</p>
+        </div>
+
+        <!-- output -->
+        <div class="parch-output" id="output-panel">
+          <div class="pthinking" id="thinking" hidden>
+            <div class="pthinking-line" data-t="0">🔍 <strong>PAL:</strong> compiling learner intent…</div>
+            <div class="pthinking-line" data-t="1">📚 <strong>Research:</strong> querying the resource index…</div>
+            <div class="pthinking-line" data-t="2">🗂️ <strong>Index:</strong> sequencing by prerequisites…</div>
+            <div class="pthinking-line" data-t="3">🎓 <strong>Generate:</strong> building your plan…</div>
+          </div>
+          <div id="curriculum-result"></div>
+          <div class="pplaceholder" id="output-placeholder">
+            <div class="pplaceholder-icon">🎓</div>
+            <p>Your personalized curriculum will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- power mode -->
+      <div class="ppower">
+        <div class="ppower-body">
+          <h3>⚡ Power mode: run the full agent</h3>
+          <p>Want live web research and deeper personalization? Copy the CurriculumOS master prompt into your assistant, or self-host the full ROSTR pipeline from the open-source repo.</p>
+        </div>
+        <div class="ppower-actions">
+          <button class="pbtn pbtn-ghost" id="copy-master-prompt">⧉ Copy master prompt</button>
+          <a class="pbtn pbtn-ghost" href="https://github.com/diamitani/curriculum-os" target="_blank" rel="noopener">View CurriculumOS on GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="pfooter">
+    <div class="pcontainer">
+      <p>🌊 LetsVibeAI Agent Portal · Built on <a href="https://github.com/diamitani/curriculum-os" target="_blank" rel="noopener">CurriculumOS</a> (MIT) · <a href="/">Back to the Academy</a></p>
+    </div>
+  </footer>
+
+  <script src="/auth/config.js"></script>
+  <script src="/assets/auth.js"></script>
+  <script src="/assets/growth.js"></script>
+  <script src="/assets/data.js"></script>
+  <script src="/agents/assets/portal.js"></script>
+</body>
+</html>
